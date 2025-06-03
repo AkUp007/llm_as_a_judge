@@ -256,9 +256,9 @@ if st.button("Generate & Evaluate"):
 
         st.subheader("Prompt Evaluation")
         # st.json(evaluation)
-        try:
-            parsed = json.loads(evaluation)
-            st.json(parsed)
-        except json.JSONDecodeError:
-            st.error("Failed to parse evaluation JSON.")
-            st.code(evaluation, language='text')
+        # try:
+        #     parsed = json.loads(evaluation)
+        #     st.json(parsed)
+        # except json.JSONDecodeError:
+        #     st.error("Failed to parse evaluation JSON.")
+        st.code(evaluation, language='text')
