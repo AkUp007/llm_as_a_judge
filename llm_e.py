@@ -1,12 +1,10 @@
 import json
 import os
-from dotenv import load_dotenv
 import together
 import streamlit as st
 
 api_ke = st.secrets["TOGETHER_API_KEY"]
 
-load_dotenv()
 together.api_key = os.getenv("api_ke")
 MODEL_1 = "mistralai/Mistral-7B-Instruct-v0.1"
 MODEL_2 = "mistralai/Mixtral-8x7B-Instruct-v0.1"
