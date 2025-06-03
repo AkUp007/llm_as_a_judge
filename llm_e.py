@@ -2,7 +2,8 @@ import json
 import os
 import together
 import streamlit as st
-
+from dotenv import load_dotenv
+load_dotenv()
 api_ke = st.secrets["TOGETHER_API_KEY"]
 
 together.api_key = os.getenv("api_ke")
